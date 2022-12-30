@@ -34,12 +34,21 @@ function btnClick(){
     var msg=document.getElementById("message").value.trim();
 
 
-    if(name=="" || eMAIL=="" || num=="" || msg=="")
+    if(name==="" || eMAIL==="" || num==="" || msg==="")
     {
-        alert('Please fill all fields')
+        alert('Please fill all fields');
         btn=false;
-    }else {
-        btn=true;
+    }else if(!/^([a-zA-Z0-9\._]+)@([a-zA-Z0-9]+).([a-z]+).([a-z]+)?$/.test(eMAIL)){
+        alert('Please enter a valid Email adress');
+
+    
+        btn=flase;
     }
+    else if(!/^\d+$/.test(num)){
+        alert('Please enter a valid Phone number');
+
+        btn=false;
+    }
+    
     return btn;
 }
