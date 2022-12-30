@@ -645,18 +645,22 @@ section .container {
 #name{
   background: transparent;
   border-color: #18d26e;
+  color: white;
 }
 #email{
   background: transparent;
   border-color: #18d26e;
+  color: white;
 }
 #mobile{
   background: transparent;
   border-color: #18d26e;
+  color: white;
 }
 #message{
   background: transparent;
   border-color: #18d26e;
+  color: white;
 }
 #snd-btn{
   background-color: transparent;
